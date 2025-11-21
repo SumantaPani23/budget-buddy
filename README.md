@@ -4,9 +4,7 @@ Budget Buddy is a personal finance dashboard that visualizes your spending habit
 
 🚀 Live Demo
 
-Click here to try the app!
-(Note: Replace this link with your actual deployed Streamlit URL)
-
+(https://budget-buddy-sumanta.streamlit.app/)
 ✨ Features
 
 Multi-Format Support: Accepts CSV, Excel (.xlsx), and PDF bank statements.
@@ -56,5 +54,6 @@ app.py: The main application logic and UI.
 requirements.txt: List of Python libraries required.
 
 dummy_data.csv: Sample India-specific bank statement for testing.
+
 
 Created by Sumanta Pani
