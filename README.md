@@ -5,6 +5,8 @@ Budget Buddy is a personal finance dashboard that visualizes your spending habit
 🚀 Live Demo
 
 (https://budget-buddy-sumanta.streamlit.app/)
+
+
 ✨ Features
 
 Multi-Format Support: Accepts CSV, Excel (.xlsx), and PDF bank statements.
@@ -57,3 +59,4 @@ dummy_data.csv: Sample India-specific bank statement for testing.
 
 
 Created by Sumanta Pani
+
