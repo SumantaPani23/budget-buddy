@@ -6,7 +6,7 @@ from pypdf import PdfReader
 
 # 1. Page Configuration
 st.set_page_config(page_title="SpendLens Analytics", page_icon="💳", layout="wide")
-)
+
 
 # --- CSS HACK: Hide the "Limit 200MB" text ---
 hide_file_uploader_limit = """
@@ -120,4 +120,5 @@ else:
 st.markdown("---")
 
 st.caption("Budget Buddy • Built by Sumanta Pani")
+
 
