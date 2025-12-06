@@ -5,10 +5,7 @@ import time
 from pypdf import PdfReader
 
 # 1. Page Configuration
-st.set_page_config(
-    page_title="Budget Buddy",
-    page_icon="💰",
-    layout="centered"
+st.set_page_config(page_title="SpendLens Analytics", page_icon="💳", layout="wide")
 )
 
 # --- CSS HACK: Hide the "Limit 200MB" text ---
@@ -25,8 +22,7 @@ st.markdown(hide_file_uploader_limit, unsafe_allow_html=True)
 st.image("https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=800&q=80", use_container_width=True)
 
 # 3. Title and Intro
-st.title("💰 Budget Buddy")
-st.markdown("### Your Personal Finance Dashboard")
+st.title("SpendLens: Personal Finance Analytics")
 st.markdown("Upload your bank statement (CSV, Excel, or PDF) to see where your money goes.")
 
 # --- HELPER FUNCTION: Categorize Expenses ---
@@ -122,4 +118,5 @@ else:
 
 # Footer
 st.markdown("---")
+
 st.caption("Budget Buddy • Built by Sumanta Pani")
