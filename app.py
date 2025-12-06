@@ -120,3 +120,4 @@ else:
 st.markdown("---")
 
 st.caption("Budget Buddy • Built by Sumanta Pani")
+
