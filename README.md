@@ -1,62 +1,39 @@
-💰 Budget Buddy
+# SpendLens: Personal Finance Analytics 💳
+### *Privacy-First Financial Visualization Engine powered by Python & Plotly*
 
-Budget Buddy is a personal finance dashboard that visualizes your spending habits. Upload your bank statement (CSV, Excel, or PDF), and the app automatically categorizes transactions and presents a clear breakdown of where your money goes.
+![Status](https://img.shields.io/badge/Status-Live%20Prototype-success) ![Tech Stack](https://img.shields.io/badge/Tech-Python%20|%20Pandas%20|%20Plotly-blue) ![Privacy](https://img.shields.io/badge/Privacy-Local%20Processing-green)
 
-🚀 Live Demo
+**Live Prototype:** [https://spend-lens.streamlit.app/](https://spend-lens.streamlit.app/)
+**Architect:** [Sumanta Pani](https://www.linkedin.com/in/sumantapani90)
 
-(https://budget-buddy-sumanta.streamlit.app/)
+---
 
+## 1. Executive Summary
+SpendLens is a **Personal Finance Dashboard** designed to solve the "Financial Hygiene" problem. Unlike proprietary apps that require bank credentials, SpendLens operates on a **Local-First Architecture**, processing raw bank statements (CSV/PDF) directly in the browser session without storing sensitive financial data.
 
-✨ Features
+## 2. Key Features
+* **Multi-Format Ingestion:** proprietary parsing logic supports CSV, Excel (.xlsx), and PDF bank statements (specifically optimized for Indian banking formats).
+* **Smart Categorization Engine:** Uses keyword mapping to automatically tag transactions (e.g., Zomato -> Food, Uber -> Transport).
+* **"Mazboori" (Non-Discretionary) Logic:** Custom classification algorithm to separate **Fixed/Unavoidable Expenses** (Rent, EMI) from Discretionary Spending.
+* **Visual Analytics:** Interactive Sunburst and Donut charts powered by **Plotly** for granular expense breakdown.
+* **Privacy Protocol:** Zero-database architecture. Data is processed in RAM and discarded immediately after the session ends.
 
-Multi-Format Support: Accepts CSV, Excel (.xlsx), and PDF bank statements.
+## 3. Technical Stack
+| Component | Tool | Usage |
+| :--- | :--- | :--- |
+| **Frontend** | Streamlit | Responsive Web UI |
+| **Data Processing** | Pandas | ETL (Extract, Transform, Load) pipelines |
+| **Visualization** | Plotly Express | Interactive financial charting |
+| **PDF Extraction** | PyPDF | Parsing unstructured PDF bank statements |
 
-Smart Categorization: Automatically tags transactions as Food, Transport, Entertainment, Utilities, etc.
-
-"Mazboori" Detection: Fun, custom category for unavoidable expenses.
-
-Visual Analytics: Interactive Donut Chart powered by Plotly.
-
-Privacy Focused: Data is processed locally in your browser session and is not stored.
-
-🛠️ Tech Stack
-
-Frontend: Streamlit
-
-Data Processing: Pandas
-
-Visualization: Plotly
-
-PDF Extraction: pypdf
-
-Language: Python 3.10+
-
-📦 How to Run Locally
-
-Clone the repository:
-
-git clone [https://github.com/your-username/budget-buddy.git](https://github.com/your-username/budget-buddy.git)
+## 4. How to Run Locally
+```bash
+# Clone the repository
+git clone [https://github.com/sumantapani23/budget-buddy.git](https://github.com/sumantapani23/budget-buddy.git)
 cd budget-buddy
 
-
-Install dependencies:
-
+# Install dependencies
 pip install -r requirements.txt
 
-
-Run the app:
-
+# Run the application
 streamlit run app.py
-
-
-📂 File Structure
-
-app.py: The main application logic and UI.
-
-requirements.txt: List of Python libraries required.
-
-dummy_data.csv: Sample India-specific bank statement for testing.
-
-
-Created by Sumanta Pani
-
